@@ -8,11 +8,11 @@ S = Sstart
 print(S)
 t = 0
 while int(S) > 0:
-#(S=Sstart + Sdelta) пока не встретились
+    #(S=Sstart + Sdelta) пока не встретились
     if count%2 == 0:
-    #Sdelta = fFv * t
-    #Sstart + Sdelta = dv * t
-    #fFv*t = Sstart - dv * t
+        #Sdelta = fFv * t
+        #Sstart + Sdelta = dv * t
+        #fFv*t = Sstart - dv * t
         t = S / (dv - fFv) #бежала собака от 2 друга, когда 1 друг удалялся
         #S = S + t * fFv - t * sFv + S1 #расстояние между друзьями
         S=S - t * (sFv - fFv)
